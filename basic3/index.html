@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이름부르기</title>
+  <style>
+    div{color:blue; /* 글자색 */}
+    .셋째{color:red;}
+    .딸{background-color:grey;}
+
+    #둘째{color:green;}
+    #아들{background-color:brown;}
+  </style>
+</head>
+<body>
+  <!--주석처리-->
+  <!-- <시작태그></종료태그>
+  <열린태그></닫는태그>  -->
+
+<!-- 이름부르기
+  *class="이름명" 이름은 2개이상 만들 수 있음
+    다른태그에서 중복하여 붙일 수 있음.
+
+  * id="유일한이름" 이름을 2개이상 만들 수 없음
+    다른태그에서 중복하여 붙일 수 없음.
+    사이트 전체에서 유일한 이름
+-->
+
+  <div class="딸">영역입니다1</div>
+  <div id="둘째">영역입니다2</div>
+  <div class="셋째 딸">영역입니다3</div>
+  <div id="아들">영역입니다4</div>
+  <div>영역입니다5</div>
+  <div>영역입니다6</div>
+</body>
+</html>
