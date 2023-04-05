@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.약::after {
+  content: "";
+  background-color: cadetblue;
+  clear: both;
+  display: block;
+}
+
+.아빠 {
+  padding: 20px;
+  background-color: rgb(10, 70, 70);
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.아빠 .자식 {
+  background-color: yellowgreen;
+  width: 33.3333%;
+  height: 100px;
+  float: left;
+}
+
+/* :: 콜론 두개는 css에서 가상의 라는 뜻 */
+/* after{content 두개는 짝지
+  에프터는 인라인 요소!! */
+
+
+/* 인라인요소라 크기조절등이 안먹음 */
+/* 아무리 div 등을 html에서 만들어도
+맨 뒤에 결국 붙게 된다 그 뜻처럼
+before도 존재 */
+
+.팔수{
+  margin-top: 30px;
+}
+
+.팔수 .자식8{
+  width: 45%;
+  background-color: thistle;
+  float: left;
+  height: 100px;
+}
+
+.팔수 .자식1{
+  margin-right: 10%;
+}

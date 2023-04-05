@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  padding: 50px;
+}
+
+.parent1 {
+  width: 500px;
+  height: 500px;
+  background-image: url(https://img.freepik.com/premium-vector/square-grid-paper-seamless-pattern-millimeter-paper-sheet-background_434359-268.jpg?w=2000);
+}
+
+.parent1 .child1 {
+  width: 100px;
+  height: 100px;
+  background-color: slategrey;
+  position: relative;
+  left: 200px;
+}
+
+.parent1 .child1-2{
+  width: 100px;
+  height: 100px;
+  background-color: chocolate;
+}
+
+.parent2 {
+  position: relative;
+  margin-top: 30px;
+  width: 500px;
+  height: 500px;
+  background-image: url(https://img.freepik.com/premium-vector/square-grid-paper-seamless-pattern-millimeter-paper-sheet-background_434359-268.jpg?w=2000);
+}
+
+.parent2 .child2 {
+  width: 100px;
+  height: 100px;
+  background-color: slategrey;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* 앱솔은 죽어서 유령이 됐다는뜻이야 
+  부모가 아무 포지션이 없다면 단군 할배한테 붙어서 아무 제약없이 최상단으로 가버림
+  부모가 포지션이 생기면 그쪽 안으로 붙어버림 하늘에 떠돌아다니는 연처럼.. */
+}
+
+.parent3 {}
+
+.parent3 .child3 {}
+
+.parent4 {}
+
+.parent4 .child4 {}
