@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.아빠 {
+  width: 1000px;
+  background-color: teal;
+  padding: 20px;
+  border: 1px solid blueviolet;
+  margin: 30px auto;
+}
+
+.일수>div {
+  background-color: brown;
+  width: 32%;
+  margin-right: 2%;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  float: left;
+}
+
+.일수>div:last-child{
+  margin-right: 0;
+}
+
+.일수 .짜쓱1{
+  position: relative;
+  background-image: url(https://img.cgv.co.kr/WebApp/contents/eventV4/36902/16806016980290.jpg);
+  background-size: cover;
+  /* 기준이 되는 포지션: relative, absoulte, fixed */
+}
+
+.일수 .짜쓱1 .cover{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; height: 100%;
+  background-color: rgb(24, 24, 24);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.일수 .짜쓱1:hover .cover{
+opacity: 1;
+transition: 0.3s;
+}
+
+.일수 .짜쓱2 {
+  position: relative;
+  background-size: cover;
+  background-image: url(https://img.cgv.co.kr/WebApp/contents/eventV4/36838/16800662892860.jpg);
+  overflow: hidden;
+}
+
+.일수 .짜쓱2 .cover{
+  position: absolute;
+  left: 50%; bottom: -52px;
+  transform: translateX(-50%);
+  width: 100%; height: 50px;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  /* opacity: 0.8; */
+  line-height: 50px;
+  transition: 0.3s;
+}
+
+.일수 .짜쓱2:hover .cover{
+  bottom: 0;
+  /* transition: 0.3s; */
+
+}
+
+
+.일수 .짜쓱3{
+position: relative;
+}
+.일수 .짜쓱3 .cover{
+  position: absolute;
+  width: 100% ;height: 100%;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  line-height: 1.3;
+  border: 1px solid red;
+}
+
+.일수 .짜쓱3 .cover .title{
+  position: absolute;
+  left: 50%;top: 50%;
+  color: #fff;
+  transform: translate(-50%,-50%);
+  padding: 5px, 10px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 20px;
+}
+
+.일수 .짜쓱3 .cover video{
+  width: 100%;
+}
+
+
+/* .일수 .효자{
+  clear: both;
+} */
+
+/* .아빠:hover */
+.아빠::after{content: "";
+  clear: both;
+  display: block;
+}

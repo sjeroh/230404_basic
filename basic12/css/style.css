@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.치료::after{
+content:"" ;
+clear: both;
+display: block;
+}
+/* 치료라는 클래스를 붙이기만 하면 무조건 뒤에 적용 되게끔! */
+
+.전체{
+  /* 전체의 넓이는 부모인 body를 따르고 전체의 높이는 자식인 김동무를 따른다. */
+  border: 5px solid red;
+  padding: 20px;
+}
+.김동무{
+  /* 김동무의 넓이는 부모인 전체를 따르고 높이는 자식인 글자(김동무)를 따른다. */
+  border: 5px solid blue;
+}
+.김동배{
+  border: 5px solid green;
+  width: 300px;
+  margin: 0 auto;
+  /* 상하 좌우 값 */
+}
+
+.김동사과 {
+  margin-top: 30px;
+  border: 5px solid salmon;
+  
+}
+
+.김동사과 .사자{
+  background-color: cadetblue;
+  width: 33.3333%;
+  float: left;
+}
+.김동사과 .약{
+  clear: both;
+}
+
+.김동배추{
+  border: 5px solid rebeccapurple;
+}
+
+.김동배추 .추자{
+  background-color: crimson;
+  width: 50%;
+  float: left;
+}
+
