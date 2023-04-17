@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+/* font사이즈의 기본값은 16px */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* reset */
+li {
+  /* 블릿문자 삭제 --> 1이던 점이던 다 */
+  list-style: none;
+}
+
+a {
+  /* a태그가 가진  색상과 밑줄을 삭제 */
+  color: #333;
+  text-decoration: none;
+}
+
+/* wrap */
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* header */
+#header {}
+
+#header h1 {
+  float: left;
+}
+
+#header .nav {
+  margin-top: 20px;
+  float: right;
+  font-weight: bold;
+  color: #141414;
+}
+
+#header .nav ul {}
+
+#header .nav ul li {
+  width: 125px;
+  text-align: center;
+  float: left;
+  position: relative;
+
+}
+
+#header .nav ul li a {
+  display: block;
+  /* background-color: blueviolet; */
+  padding: 20px 15px;
+  transition: 0.3s;
+}
+
+#header .nav ul li a:hover {
+  background-color: #ddd;
+}
+
+#header .nav ul li .submenu {
+  display: none;
+  /* 디스플레이 none은 화면상에서 안보이게됨. */
+  /* 반대는 display: block; */
+  /* none/block은 애니메이션 x
+  opacity는 애니메이션 o */
+  background-color: #f6f6f6;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  z-index: 1;
+}
+
+#banner {
+  height: 378px;
+  overflow: hidden;
+}
+
+#banner .slideList {
+  position: relative;
+}
+
+#banner .slideList .slideImg {
+  position: relative;
+}
+
+#banner .slideList .slideImg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+#banner .slideList .slideImg img {
+  width: 100%;
+  /* img태그의 특징 인라인요소--> 에측하지 못하는 공간을 가지고 있기 때문. 해결방법 2가지 */
+  /* display: block; <-- 1. 블럭요소로 만든다. */
+  vertical-align: top;
+  /* <-- 2. 버티컬로 만든다. 주로 블럭을 씀. */
+}
+
+/* content1 */
+#content1 {
+  margin-top: 15px;
+}
+
+#content1 .notice {
+  /* background-color: beige; */
+  float: left;
+  width: 49%;
+  height: 218px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 30px;
+  position: relative;
+}
+
+#content1 .notice ul {}
+
+#content1 .notice ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+#content1 .notice ul li a {
+  font-size: 24px;
+  color: #999;
+  font-weight: bold;
+  /* font-weight 폰트 두께 */
+}
+
+#content1 .notice ul li.active a {
+  color: #000;
+}
+
+#content1 .notice ul li ul {
+  position: absolute;
+  left: 30px;
+  top: 70px;
+}
+
+#content1 .notice ul li ul li {
+  width: 95%;
+}
+
+#content1 .notice ul li ul li a {
+  font-size: 16px;
+  float: left;
+  width: 68%;
+  /* 말줄임말 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* //말줄임말 */
+  font-weight: normal;
+  /* 폰트 두께 초기화 */
+
+}
+
+#content1 .notice ul li ul li span {
+  float: right;
+}
+
+
+
+
+#content1 .ad {
+  background-color: beige;
+  float: right;
+  width: 49%;
+  height: 218px;
+}
+
+/* 양쪽에 49퍼를 주고 오른쪽 왼쪽에 붙여도 중간에 2퍼가 남으므로 이런식으로 띄워줄 수도 있다. */
+
+#content1 .ad a {}
+
+#content1 .ad a img {
+  width: 100%;
+}
+
+#content2 {
+  margin-top: 15px;
+}
+
+#content2 h2 {
+  margin-bottom: 10px;
+}
+
+#content2 ul {}
+
+#content2 ul li {
+  width: 24.25%;
+  float: left;
+  margin-right: 1%;
+}
+
+#content2 ul li:last-child {
+  margin-right: 0;
+}
+
+#content2 ul li div {
+  overflow: hidden;
+}
+
+#content2 ul li div img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+#content2 ul li div:hover img{
+  transform: scale(1.2);
+  /* transform: scale(1); --> 100% */
+}
+
+#content2 ul li span {}
+
+#footer{
+  border-top: 1px solid #ccc;
+  padding: 30px 0;
+  margin-top: 30px;
+}
+#footer address{
+  /* address는 태어날때부터 기울임(italic).--> 일반(font-style: normal;) */
+  font-style: normal;
+}
+#footer address ul{
+  width: 652px;
+}
+#footer address ul li{
+  position: relative;
+  display: inline;
+  padding: 0 15px 0 10px;
+  /* 1.display:none; --> 없어져라.
+  2.display:block; --> 공간을 다 차지하기
+  3.display:inline; --> 넓이 차지를 자기 크기만큼만 줄여버림. 공간을 인식못함. padding margin의 상하가 적용 안됨!
+  4.display:inline-block; --> 인라인요소이나, 블럭요소처럼 공간을 인식함. */
+}
+#footer address ul li::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 1px;
+  height: 13px;
+  background-color: #666;
+}
+#footer address ul li.left{
+  padding-left: 0;
+}
+
+#footer address p{
+  padding-top: 30px;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+/* 팝업 */
+
+.layer-bg {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%;height: 100%; */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.layer-bg .layer {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+.layer-bg .layer h2 {
+  font-size: 35px;
+}
+
+.layer-bg .layer .close {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
