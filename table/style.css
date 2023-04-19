@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.wrap>div {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+}
+
+.table1 {}
+
+.table1 table {
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+
+.table1 table tr {}
+
+.table1 table tr th {
+  border: 1px solid #ccc;
+}
+
+.table1 table tr td {
+  border: 1px solid #ccc;
+}
+
+.wrap>div h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.table1-2 {}
+
+.table1-2 table {
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+
+.table1-2 table tr {}
+
+.table1-2 table tr th {
+  border: 1px solid #ccc;
+}
+
+.table1-2 table tr td {
+  border: 1px solid #ccc;
+}
+
+.table2 {}
+
+.table2 h2 {}
+
+.table2 table {
+  width: 100%;
+}
+
+.table2 table tr {}
+
+.table2 table,
+.table2 table tr th,
+.table2 table tr td {
+  border: 1px solid #444;
+  border-collapse: collapse;
+  /* talbe border-collapse 열사이의 공간을 없애는 역할 */
+  padding: 15px;
+  text-align: center;
+  background-color: darksalmon;
+}
+
+.table2 table tr:nth-child(1){
+  border-bottom: 5px double #000;
+}
+
+.table2 table tr:nth-child(2){
+  height: 100px;
+}
+
+
+.table2 table tr th:nth-child(1) {
+  width: 20%;
+}
+
+.table2 table tr th:nth-child(2) {
+  width: 60%;
+}
+
+.table2 table tr th:nth-child(3) {
+  width: 20%;
+}
+
+.table2 table tr:nth-child(2) td:nth-child(1){
+  background-color: rgb(145, 130, 71);
+}
+
+.table2 table tr:nth-child(2) td:nth-child(2){
+  background-color: rgb(79, 81, 88);
+}
+
+.table2 table tr:nth-child(2) td:nth-child(3){
+  background-color: rgb(66, 195, 34);
+}
+
+.table2 table tr:nth-child(3) td:nth-child(1){
+  background-color: cornsilk;
+}
+
+.table2 table tr:nth-child(3) td:nth-child(2){
+  background-color: rgb(152, 50, 69);
+}
+
+.table2 table tr:nth-child(3) td:nth-child(3){
+  background-color: rgb(195, 104, 68);
+}
+
+
+.table2 table tr:nth-child(4) td:nth-child(1){
+  background-color: rgb(83, 70, 181);
+}
+
+.table2 table tr:nth-child(4) td:nth-child(3){
+  background-color: rgb(15, 170, 172);
+}
+
+
+
+
+.table3 table {
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+
+.table3 table tr {}
+
+.table3 table tr th {
+  border: 1px solid #ccc;
+}
+
+.table3 table tr td {
+  border: 1px solid #ccc;
+}
+
+.table3 table,
+.table3 table tr th,
+.table3 table tr td {
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+}
+
+
+.table3 table {
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+
+.table4 table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table4 table tr td {
+  border: 1px solid #444;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+  background-color: darksalmon;
+}
+.table4 table tr {}
+
+.table4 table tr th {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.table4 table tr td {
+  border: 1px solid #ccc;
+}
+
+.table5 table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table5 table tr td {
+  border: 1px solid #444;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+  background-color: darksalmon;
+}
+.table5 table tr {}
+
+.table5 table tr th {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.table5 table tr td {
+  border: 1px solid #ccc;
+}
+
+
+.table6 table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* .talbe6 table,
+.talbe6 table tr th,
+.talbe6 table tr td{
+  border: 1px solid #444;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+  background-color: darksalmon;
+} */
+
+
+.table6 table tr td {
+  border: 1px solid #444;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+  background-color: darksalmon;
+}
+.table6 table tr {}
+
+.table6 table tr th {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.table6 table tr td {
+  border: 1px solid #ccc;
+}
+
+
+.table7 table{
+  width: 100%;
+}
+
+.table7 table,
+.table7 table tr th,
+.table7 table tr td {
+  border: 1px solid #cbcbcb;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+}
+
+/* even 짝수 */
+/* .table7 table tr:nth-child(even){
+  background-color: rgba(90, 155, 235, 0.59);
+} */
+
+/* 2n 짝수 */
+.table7 table tr:nth-child(2n){
+  background-color: rgba(235, 90, 141, 0.59);}
+
+
+/* 홀수 */
+/* 
+.table7 table tr:nth-child(odd){
+  background-color: rgba(63, 61, 221, 0.5);
+} */
+
+.table7 table tr:nth-child(2n+1){
+  background-color: rgba(136, 134, 233, 0.5);
+}
+.table7 table tr th:nth-child(even),
+.table7 table tr td:nth-child(even){
+background-color: rgba(234, 131, 227, 0.677); 
+}
+
+
+
+.table8 table{
+  width: 100%;
+}
+
+.table8 table,
+.table8 table tr th,
+.table8 table tr td{
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+}
+
+.table8 table tr{
+  border-bottom: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.table8 table tr:hover{
+  background-color: rgba(225, 168, 148, 0.742);
+}
+
+
+.table9 table{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.table9 table,
+.table9 table tr th,
+.table9 table tr td{
+  border: 1px solid #868686;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+}
+.table9 colgroup col:nth-child(1){
+  background-color: rgba(228, 183, 227, 0.5);
+}
+
+.table9 colgroup col:nth-child(2){
+  background-color: rgba(239, 207, 219, 0.5);
+}
+
+.table9 colgroup col:nth-child(3){
+  background-color: rgba(235, 178, 178, 0.5);
+}
