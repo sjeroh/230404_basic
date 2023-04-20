@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>사용자로부터 입력받기</h1>
+  <div class="box1">
+    <form action="#">
+      <label for="name">이름</label>
+      <input type="text" id="name" name="my-name">
+      <br><br>
+      <label for="age">나이</label>
+      <input type="number" id="age" name="my-age">
+      <br><br>
+      <button type="submit">제출</button>
+      <button type="reset">초기화</button>
+    </form>
+  </div> <!-- //box1 -->
+
+  <div class="box2">
+    <form action="#">
+      <fieldset>
+        <legend>Legeno</legend>
+        <label for="name1">이름</label>
+        <input type="text" id="name1" name="my-name1">
+        <!-- // input은 단독태그. -->
+        <br> <br>
+        <label for="age1">나이</label>
+        <input type="number" name="my-age1" id="age1">
+        <!-- <input type="submit" value="제출하시오"> -->
+      </fieldset>
+
+      <fieldset>
+        <legend> legono no</legend>
+        <label for="name2">이름</label>
+        <input type="text" id="name2" name="my-name2">
+        <br><br>
+        <label for="age2">나이</label>
+        <input type="number" name="my-age2" id="age2">
+
+      </fieldset>
+    </form>
+  </div> <!-- //box2 -->
+
+  <div class="box3">
+    <form action="#">
+      <label for="txt">텍스트</label>
+      <input type="text" name="txt" id="txt" placeholder="5자이하" maxlength="5">
+      <br><br>
+    
+    <label for="pwd">password</label>
+    <input type="password" name="pwd" id="pwd" placeholder="4자 이상" minlength="4" required>
+    <br><br>
+    <label for="src">search</label>
+      <input type="search" name="src" id="src">
+    <input type="submit">
+  </form>
+  </div> <!-- //box3 -->
+
+<div class="box4">
+  <form action="#">
+    <label for="num">number</label>
+    <input type="number" name="num" id="num" min="0" max="10">
+    <label for="rg">range</label>
+    <input type="range" name="rg" id="rg"
+    min="0" max="100" step="10">
+    <label for="dt">date</label>
+    <input type="date" name="dt" id="dt"
+    min="2020-01-01" max="2030-12-31">
+
+
+
+  </form>
+
+</div> <!-- //box4 -->
+
+<div class="box5">
+  <!-- 아래와 같이 적는건 인라인 스타일이라고 한다. 방법이 있다 정도. 추천하는 방법은 아님. -->
+  <h3 style="padding-bottom: 20px
+  ;">메모</h3>
+  <label for="mg">메세지를 입력하세요</label>
+  <br>
+  <textarea name="msg" id="mg" cols="50" rows="10"></textarea>
+
+</div> <!-- //box5 -->
+
+<div class="box6">
+  <h3>select,option 태그</h3>
+  <form action="#">
+    <label for="lang">언어</label>
+    <select name="lang" id="lang">
+      <option value="">--언어선택--</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="javaScript">자바크스립트</option>
+      <option value="React">리액트</option>
+    </select>
+    <br><br>
+
+    <h3>optgroup 태그</h3>
+    <label for="shopping">쇼핑목록</label>
+    <select name="shopping" id="shopping">
+      <optgroup label="과일">
+        <option value="F_apl">사과</option>
+        <option value="F_grp">포도</option>
+        <option value="F_orange">오렌지</option>
+        <option value="F_melon">멜론</option>
+      </optgroup>
+
+      <optgroup label="채소">
+        <option value="v_crt">당근</option>
+        <option value="v_tmt">토마토</option>
+        <option value="v_ept">가지</option>
+        <option value="v_cp">배추</option>
+      </optgroup>
+      <optgroup label="육류">
+        <option value="m_bef">소고기</option>
+        <option value="m_pig">돼지고기</option>
+        <option value="m_ckn">닭고기</option>
+      </optgroup>
+    </select>
+  </form>
+</div> <!-- //box6 -->
+
+<div class="box7">
+  <form action="#">
+    <fieldset>
+      <legend>성별</legend>
+      <input type="radio" name="gender">남자
+      <input type="radio" name="gender" checked>여자
+    </fieldset>
+
+    <fieldset>
+      <legend>지역선택</legend>
+      <input type="radio" name="area" checked>서울
+      <input type="radio" name="area">경기
+      <input type="radio" name="area">인천
+      <input type="radio" name="area">부산
+    </fieldset>
+
+
+    <fieldset>
+      <legend>좋아하는과일 모두선택</legend>
+      <input type="checkbox" name="fr" >사과
+      <input type="checkbox" name="fr" >배
+      <input type="checkbox" name="fr" >수박
+      <input type="checkbox" name="fr" >바나나
+      <input type="checkbox" name="fr" >딸기
+      <input type="checkbox" name="fr" >포도
+      <input type="checkbox" name="fr" >오렌지
+    </fieldset>
+  </form>
+</div>
+
+</body> 
+</html>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+
+body{
+  padding: 10vw ;
+  
+}
+
+/* viewport  = 보이는창 넓이.. */
+
+
+h1{font-size: 3vw;}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7{
+  margin-top: 3px;
+  border-bottom: 3px solid #222;
+  padding-bottom: 20px;
+}
+
+.box2 form fieldset,
+.box7 form fieldset{
+  padding: 20px;
+}
+
+/* .box3 form input{
+  margin: 0 auto;
+  padding: 20vw;
+} */
+
+
+.box4 form input{}
