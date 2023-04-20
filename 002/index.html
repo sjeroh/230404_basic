@@ -62,7 +62,7 @@
               <li><a href="#">sub-menu1</a></li>
               <li><a href="#">sub-menu2</a></li>
               <li><a href="#">sub-menu3</a></li>
-              <li><a href="#">sub-menu4</a></li>
+              <li class="contact"><a href="#">Contact</a></li>
             </ul>
           </li>
         </ul>
@@ -259,6 +259,22 @@
       tabBtn.removeClass('active')
       $(this).addClass('active');
     });
+
+    //window창만들기
+    // $('.contact').click(어떤일)
+    // $('.contact').click(function(){실행문})
+    $('.contact').click(function(){
+      window.open("contact.html", "child", "width=400,height=500,left=200,top=500");
+    });
+
+    //팝업
+    $('#content1 .right').click(function(){
+      $('.layer-bg').fadeIn(200)
+    });
+    $('.layer .close').click(function(){
+      $('.layer-bg').fadeOut(100);
+    })
+
   </script>
 
 
