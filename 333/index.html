@@ -1,0 +1,190 @@
+<!DOCTYPE html> <!-- 지금부터 html5버전의 문서가 만들어진다. -->
+<html lang="ko">
+<!-- 이문서의 언어를 설정 -->
+
+<head>
+	<meta charset="UTF-8"><!-- 언어조합방법 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 호환을 어떻게 할것인가의 내용, ie의 가장 최선버전으로 보게한다.
+    만약에 chrome이 깔려있다면 크롬 브라우저가 웹페이지를 해석해서 보여주라
+    - chrome의 엔진을 사용하라
+    -ie로 열었다 하더라도 껍데기는 ie인데 알맹이는 chrome이라는 의미(chrome의 엔진을 쓰겠다) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 이 사이트의 넓이를 다양한 디바이스(사용자 기기)의 크기에 맞추되 초기비율을 1, 100%로 하겠다. -->
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<div id="header_logo" class="clearfix">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo/LOGO.png" alt="">
+					</a>
+				</div><!-- //logo -->
+				<nav class="nav">
+					<ul class="clearfix">
+						<li>
+							<a href="#">동호회소개</a>
+							<ul class="submenu">
+								<li><a href="#">연혁</a></li>
+								<li><a href="#">회칙</a></li>
+								<li><a href="#">이용안내</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">갤러리</a>
+							<ul class="submenu">
+								<li><a href="#">풍경자연</a></li>
+								<li><a href="#">인물</a></li>
+								<li><a href="#">사물</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">교육안내</a>
+							<ul class="submenu">
+								<li><a href="#">기초사진</a></li>
+								<li><a href="#">디지털사진</a></li>
+								<li><a href="#">전물사진</a></li>
+							</ul>
+						</li>
+						<li class="contact"><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="imageslide">
+			<div id="imgs">
+				<img src="images/slide/images(1).jpg" alt="이미지1">
+				<img src="images/slide/images(2).jpg" alt="이미지2">
+				<img src="images/slide/images(3).jpg" alt="이미지3">
+				<img src="images/slide/images(4).jpg" alt="이미지4">
+				<img src="images/slide/images(5).jpg" alt="이미지5">
+			</div> <!-- //img -->
+
+			<ul id="imgsbar">
+				<li>
+					<a href="#" img-left="0">
+						<img src="/333/images/slide/dot.png" alt="dot">
+					</a>
+				</li>
+				<li>
+					<a href="#" img-left="-1000px">
+						<img src="/333/images/slide/dot.png" alt="dot">
+					</a>
+				</li>
+				<li>
+					<a href="#" img-left="-2000px">
+						<img src="/333/images/slide/dot.png" alt="dot">
+					</a>
+				</li>
+				<li>
+					<a href="#" img-left="-3000px">
+						<img src="/333/images/slide/dot.png" alt="dot">
+					</a>
+				</li>
+				<li>
+					<a href="#" img-left="-4000px">
+						<img src="/333/images/slide/dot.png" alt="dot">
+					</a>
+				</li>
+			</ul>
+			<div class="welcome">
+				<h2>무빙사진갤러리</h2>
+			</div><!-- //welcome -->
+		</div><!-- //imageslide -->
+
+		<div id="content">
+			<div class="notice">
+				<h2>공지사항</h2>
+				<table>
+					<tr>
+						<td><a href="#">
+								제 30회 정기출사 및 모임이 있습니다.
+							</a></td>
+						<td>2023-08-24</td>
+					</tr>
+					<tr>
+						<td><a href="#">
+								대한민국 사진공모전이 개최됩니다.
+							</a></td>
+						<td>2023-08-24</td>
+					</tr>
+					<tr>
+						<td><a href="#">
+								대한민국의 자연 사진 전시회가 있습니다.
+							</a></td>
+						<td>2023-08-24</td>
+					</tr>
+					<tr>
+						<td><a href="#">
+								무빙동호회에 오신것을 환영합니다. 회원가입은 여기서...
+							</a></td>
+						<td>2023-08-24</td>
+					</tr>
+					<tr>
+						<td><a href="#">
+								포토그래퍼와 함께 하는 디지털사진 설명회가 있습니다.
+							</a></td>
+						<td>2023-08-24</td>
+					</tr>
+				</table>
+			</div> <!-- //notice -->
+			<div class="partner">
+				<h2>Partner Site</h2>
+				<div class="partner_info">
+					<img src="/333/images/partner/PARTNER_UP.png" alt="partner">
+				</div>
+			</div> <!-- //partner -->
+			<div class="modal">
+				<div class="content">
+					<img src="/333/images/partner/PARTNER.png" alt="partner">
+					<a href="#" class="close">닫기</a>
+				</div>
+			</div> <!-- //modal -->
+
+			<div class="icon">
+				<div class="icons clearfix">
+					<div class="btn">
+						<img src="images/icons/icon1.png" alt="icon1">
+						<button>커뮤니티</button>
+					</div><!-- //btn -->
+					<div class="btn">
+						<img src="images/icons/icon2.png" alt="icon2">
+						<button>전시회</button>
+					</div><!-- //btn -->
+					<div class="btn">
+						<img src="images/icons/icon3.png" alt="icon3">
+						<button>정보마당</button>
+					</div><!-- //btn -->
+				</div>
+			</div> <!-- //icon -->
+
+		</div> <!-- //content -->
+
+		<footer>
+			<div>
+				<ul>
+					<li><a href="#">법적고지</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+				</ul>
+				<address>
+					상호명:무빙사진동호회<br>
+					대표자:ANNE YOON<br>
+					개인정보관리책임자:PAULA KIM<br>
+					사업장주소:서울특별시 금천구 가산동 가산디지털2로
+
+				</address>
+			</div>
+		</footer>
+
+	</div> <!-- //wrap -->
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

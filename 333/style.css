@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header */
+header {}
+
+#header_logo {
+    padding: 20px;
+}
+
+#header_logo .logo {
+    float: left;
+    width: 300px;
+}
+
+#header_logo .logo a {}
+
+#header_logo .logo a img {
+    width: 100%;
+}
+
+#header_logo .nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+#header_logo .nav ul {}
+
+#header_logo .nav ul li {
+    position: relative;
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+
+#header_logo .nav ul li a {
+    padding: 10px 0;
+    display: block;
+    transition: 0.3s;
+}
+
+#header_logo .nav ul li a:hover {
+    background-color: #36f;
+    color: #fff;
+}
+
+#header_logo .nav ul li .submenu {
+    z-index: 30;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 42px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#header_logo .nav ul li .submenu li {}
+
+#header_logo .nav ul li .submenu li a {
+    padding: 5px 0;
+    color: #000;
+}
+
+#header_logo .nav ul li .submenu li a:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+/* imageslide */
+#imageslide {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+#imageslide #imgs {
+    /* 자식이 float일때 부모가 float이면 
+    그 부모는 깨지지 않는다
+    자식이 float일때 부모가 position이 
+    absolute,fixed이면 그 부모는 깨지지 않는다 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5000px;
+}
+
+#imageslide #imgs img {
+    float: left;
+}
+
+#imageslide #imgsbar {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+}
+
+#imageslide #imgsbar li {
+    float: left;
+}
+
+#imageslide .welcome {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* padding: 10px 20px; */
+    padding-inline: 30px;
+    /* //좌우패딩 inline */
+    padding-block: 20px;
+    /* //상하패딩 block */
+    border-radius: 20px;
+}
+
+
+/* content */
+#content {
+    overflow: hidden;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+#content .notice {
+    float: left;
+    width: 480px;
+}
+
+#content .notice h2 {
+    color: #666;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#content .notice table {
+    /* 기본폰트 16px */
+    font-size: 1em;
+    /* --> 16px 아무 설정도 안했기 떄문. */
+    /* 폰트 사이즈는 자식에게 유전된다. */
+    /* 영향을 받는 폰트사이즈 기본값== 1em */
+    font-size: 0.8em;
+    /* ==>80퍼센트값의 폰트사이즈. */
+    border-collapse: collapse;
+}
+
+/* #content .notice table tr:nth-child(even){ */
+#content .notice table tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+#content .notice table tr td {
+    padding: 5px;
+    padding-top: 10px;
+}
+
+
+#content .partner {
+    float: right;
+    width: 480px;
+}
+
+#content .partner h2 {
+    text-align: center;
+    color: #666;
+    padding-bottom: 20px;
+}
+#content .partner .partner_info {}
+#content .partner .partner_info img{
+    width: 100%;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;top: 0;
+    bottom: 0;right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.modal .content{
+    text-align: center;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 600px;
+    padding: 20px;
+}
+.modal .content img{
+    display: block;
+    margin: 0 auto;
+}
+.modal .content .close{
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #999;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* icon */
+#content .icon{float: left;}
+#content .icon .icons{}
+#content .icon .icons .btn{
+    float: left;
+    width: 33.3333%;
+    padding-inline: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#content .icon .icons .btn img{width: 100%;}
+#content .icon .icons .btn button{
+    background-color: #999;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#content .icon .icons .btn button:hover{
+    background-color: #36f;
+}
+
+footer{
+    height: 100px;
+    background-color: #36f;
+    color: #fff;
+    padding: 10px 20px;
+}
+footer div{overflow: hidden;}
+footer div ul{
+    float: left;
+    width: 50%;
+}
+footer div ul li{float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+footer div ul li a{
+    color: #fff;
+}
+footer div address{
+    float: left;
+    width: 50%;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.5;
+}
