@@ -59,7 +59,7 @@ form input[value]{
 /* welcome */
 .welcome{
   height: 100vh;
-  background: url(/FasionApp/images/welcome_bg.png) no-repeat center center;
+  background: url(../images/welcome_bg.png) no-repeat center center;
   background-size: cover;
   padding-top: 134px;
 }
@@ -90,7 +90,7 @@ form input[value]{
   position: relative;
   box-sizing: border-box;
   height: 100vh;
-  background: url(/FasionApp/images/sign_in_bg.jpg) no-repeat center;
+  background: url(../images/sign_in_bg.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -164,7 +164,7 @@ form input[value]{
 .sign_up{
   position: relative;
   height: 100vh;
-  background: url(/FasionApp/images/sign_up_bg.jpg) no-repeat center;
+  background: url(../images/sign_up_bg.jpg) no-repeat center;
   background-size: cover;
   padding-top: 92px;
   box-sizing: border-box;
@@ -197,4 +197,113 @@ form input[value]{
 header{
   background-color: #7E57C2;
   height: 50px;
+  position: relative;
+}
+
+header>h2{
+  font-size: 17px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+}
+header>img{
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+}
+header>img.menu_icon_left{
+  left: 25px;
+}
+header>img.menu_icon_right{
+  right: 25px;
+}
+
+.top_product{
+  padding: 25px 25px 0 0;
+  position: relative;
+  /* margin-top: 25px; */
+  /* width: 350px;
+  height: 250px; */
+}
+
+.top_product img{
+  width: 100%;
+}
+
+.top_product .info{
+  left: 50px;
+  padding: 10px 20px 12px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  /* width: 325px;
+  height: 75px; */
+  box-shadow: 0 0 8px rgba(0,0,0,0.25);
+  /* box-shadow: x값 y값 blur spread color; */
+}
+.top_product .info h2{
+  color: #757575;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 5px;
+  /* text-shadow: x값 y값 blur color; */
+}
+.top_product .info .desc{}
+.top_product .info .desc .price{
+  color: #7e57c2;
+  line-height: 21px;
+  font-size: 13px;
+}
+.top_product .info .desc .rate{
+  color: #7e57c2;
+  font-size: 13px;
+  line-height: 21px;
+  position: absolute;
+  right: 30px;
+  bottom: 12px;
+}
+.top_product .info .desc .rate i{}
+
+
+/* shop_product_list */
+
+.shop_product{
+  overflow: hidden;
+  margin-top: 81px;
+  padding-left: 25px;
+}
+.product_list{}
+.product_list .swiper-slide{
+}
+.product_list .swiper-slide img{
+  width: 100%;
+}
+.product_list .swiper-slide h3{
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #757575;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product_list .swiper-slide h4{
+  font-size: 13px;
+  line-height: 21px;
+  color: #7E57C2;
+}
+
+
+/* categories */
+
+.category_slide{
+  position: relative;
+}
+.swiper-wrapper{}
+.swiper-wrapper .swiper-slide{}
+.swiper-wrapper .swiper-slide img{
+  width: 100%;
+}
+.swiper-pagination.swiper-pagination{
+  bottom: 15px;
 }
