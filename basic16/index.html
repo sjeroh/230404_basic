@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .one_sign + div{
+      background-color: rgb(232, 225, 215);
+    }
+    /* 원사인을 불러 그리고 딱 내 밑에놈 --> onesignone +로  바로 밑에 동생*/
+
+    .one_sign ~ div{
+      text-decoration: underline;
+    }
+    /* ~표시 내밑에 동생들! 중에 div onesignone, two sign까지 one_sign 포함 x */
+
+    .wrap div:not(:last-child){
+      color: rgb(255, 0, 0);
+    }
+    /* 모든 애들 중에서 막내자식 뺴고!! 나머지 전부 집합 ()안의 내용을 제외한다.*/
+    .wrap div:not([class="sign"]){
+      text-align: center;
+    }
+
+
+    /* -------------------- */
+
+    .wrap div[class^="sign"]{
+      color: blue;
+    }
+    /* sign으로 시작하는 클래스는! 선택해라. 웃으면서 집합시켜라 클래스 명중에서 특정문자(sign) */
+
+    .wrap div[class$="sign"]{
+      border: 1px solid goldenrod;
+    }
+    /* sign으로 끝나는놈은 달러주고 불러와..  특정값으로 끝나는 클래스 불러 */
+    
+    .wrap div[class*="sign"]{
+      border: 1px solid black;
+    }
+    /* 클래스명 중에 특정문자(sign)를 부분 문자열로 포함한다. */
+
+    .wrap div[class~="sign"]{
+      border: 2px solid blueviolet;
+    }
+        /* 클래스명 중에 특정문자(sign)를 온전하게 포함한다.
+        다른게 조금이라도 붙어 있으면 x */
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="sign">sign</div>
+    <div class="sign_one">sign_one</div>
+    <div class="one_sign">one_sign</div>
+    <div class="onesignone">oneSignOne</div>
+    <div class="two_sign">two_sign</div>
+  </div>
+
+</body>
+
+</html>
