@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;
+box-sizing: border-box;}
+
+.container{
+  border: 2px solid #000;
+  background-color: cyan;
+  display: flex;
+  /* display: inline-flex; */
+  /* flex-direction: column; */
+  /* flex-direction: row; 기본값 안적어도됨 */
+  /* flex-direction: row-reverse; -->플룻 라이트 */
+  /* flex-direction: column-reverse; 아래에서부터 층을 쌓는형태 */
+  /* 줄넘김처리 */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+  
+  /* 메인축 방향과 줄넘김 축약형 */
+  flex-flow: row nowrap;
+}
+.container .item{
+  border: 2px solid #932323;
+  background-color: darkorange;
+  width: 40%;
+}

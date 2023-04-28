@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;
+box-sizing: border-box;}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  border: 2px solid #000;
+  background-color: cyan;
+  display: flex;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  /* 블럭요소로 바껴서 텍스트만 중앙으로 옴 */
+
+}
+.container .item{
+  border: 2px solid #932323;
+  background-color: darkorange;
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  align-self: flex-start;
+  align-self: flex-end;
+}

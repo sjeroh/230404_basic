@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 2px solid #000;
+  background-color: rgb(31, 154, 199);
+}
+.container .item {
+  border: 2px solid #932323;
+  background-color: darkorange;
+
+}
+
+
+
+.container {
+display: flex;
+}
+.container .item {
+  /* 줄어들어라! 늘어나지마라 */
+flex-basis: auto; /* 기본값 */
+/* flex-basis: 100px; */
+width: 100px;
+
+/* 늘어나지마라 */
+flex-grow: 0;
+/* 0이 fasle 나머지 숫자 true */
+flex-grow: 1;
+
+/* 줄어들어라 */
+flex-shrink: 0; 
+/* 0은 안줄어듬. */
+/* 기본값이 1 줄어들게끔 */
+/* order: 3; */
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;
+box-sizing: border-box;}
+
+.container{
+  border: 2px solid #000;
+  background-color: cyan;
+  display: flex;
+
+}
+.container .item{
+  border: 2px solid #932323;
+  background-color: darkorange;
+  width: 40%;
+  /* flex-basis: auto인데; 압축하면 0% 적용됨 */
+  flex: 1;
+  /* --> 하나만적으면.. */
+  flex: 1 1 0%;
+  /* flex: flex-grow flex-shrink flex-basis; 순서로 적힌다. */
+  /* flex: 0 1 auto 기본값;--> 늘어나지마라 줄어들어라 기본 */
+
+  flex: 1 1 300px ;
+  /* flex-grow: -->늘어날 공간이 있다면 늘어나겠다 1;
+  flex-shrink:1;--> 줄어들 공간이 있다면 줄어들겠다.
+  flex-basis:atuo; 넓이를 설정했다면 그것을 인식하겠다. 
+  반응형 때문에 다 필요함..*/
+  
+}
+
+.container .item:nth-child(1){
+  width: 200px;
+  flex: 1 0;
+  /* 넓이 값이 정해졌다면 그걸 인지하겠다 basis auto 
+  근데 축약형으로 안적어버리면 0%로 되면서 200이라는 공간을 인식하지 못하게 된다.*/
+}
